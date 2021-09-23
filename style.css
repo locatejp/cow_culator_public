@@ -1,0 +1,120 @@
+* {
+  /* outline: 2px solid yellow; */
+}
+
+body,
+.cowContainer {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+body {
+  background-image: url("https://raw.githubusercontent.com/locatejp/assets/master/meadow.jpeg");
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cowContainer {
+  height: 550px;
+  width: 450px;
+  background-image: url("https://raw.githubusercontent.com/locatejp/assets/master/cow_print.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.rowContainer {
+  box-sizing: border-box;
+  margin: 5px 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3px;
+  font-size: x-large;
+}
+
+.displayContainer {
+  /* flex-grow: 1.25; */
+  height: 2rem;
+}
+
+.displayScreen {
+  border-radius: 10px;
+  background-color: lightgray;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.previousEntry,
+.currentEntry {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.previousEntry {
+  margin-top: 5px;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.currentEntry {
+  margin-bottom: 5px;
+  flex-grow: 2;
+  font-size: 36px;
+}
+
+.singleCalcBtn,
+.doubleCalcBtn {
+  width: 10px;
+  flex-grow: 1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singleCalcBtn:hover,
+.doubleCalcBtn:hover {
+  cursor: pointer;
+}
+
+.doubleCalcBtn {
+  flex-grow: 2;
+  padding: 0px 6px;
+}
+
+.blueBtn {
+  background-color: rgb(36, 126, 235);
+}
+
+.blueBtn:hover {
+  background-color: rgb(84, 154, 240);
+}
+
+.orangeBtn {
+  background-color: rgb(250, 143, 31);
+}
+
+.orangeBtn:hover {
+  background-color: rgb(252, 178, 99);
+}
+
+.numBtn {
+  background-color: darkgray;
+}
+
+.numBtn:hover {
+  background-color: rgb(218, 216, 216);
+}
